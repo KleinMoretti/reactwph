@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:regular,bold,italic&subset=latin,latin-ext');
+
+/* Home Page css*/
+
+.home-page {
+  position: static;
+  display: flex;
+  min-height: 96vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+
+  background-position: 0px 0px, 0px 0px, 0px 0px;
+  background-size: auto, auto, cover;
+  text-align: left;
+}
+
+.home-page:medium {
+  min-height: 90vh;
+}
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.title {
+  font-family: warnock-pro, serif;
+  font-style: normal;
+  font-weight: bold;
+  color: hsla(0, 100.00%, 3.33%, 1.00);
+  font-size: 38px;
+
+}
+/*Button css*/
+.button-block {
+  display: flex;
+  margin-top: 12px;
+  padding-right: 0px;
+  padding-left: 0px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  color: lightgrey;
+}
+
+.button-block:tiny {
+  display: block;
+}
+
+
+.button-3{
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 11px;
+  padding-right: 52px;
+  padding-bottom: 11px;
+  padding-left: 52px;
+  background-color: hsla(0,95.00%,7.67%, 0.15);
+  text-transform: none;
+  color:white;
+  font-size: 20px;
+  outline-color:inherit;
+}
+
+.button-3:hover {
+  box-shadow: 1px 1px 3px 0 black;
+  color: hsla(0, 97.36%, 2.70%, 1.00);
+  text-shadow: 1px 1px 6px hsla(0, 0.00%, 100.00%, 1.00);
+}
+
+
+
+.footer {
+  display: flex;
+  height: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  background-color: hsla(0, 0.00%, 86.67%, 1.00);
+}
