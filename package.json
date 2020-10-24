@@ -1,7 +1,7 @@
 {
   "name": "reactwph",
   "version": "0.1.0",
-  "homepage": "https://kleinmoretti.github.io/reactwph",
+  "homepage": "https://kleinmoretti.github.io/reactwph/",
   "private": true,
   "dependencies": {
     "react": "^16.13.1",
