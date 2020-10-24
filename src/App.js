@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Route,Link,BrowserRouter,Switch} from "react-router-dom"
+import {HashRouter,Route,Link,BrowserRouter,Switch} from "react-router-dom"
 //components
 import Header from './components/headerComponent/header';
 import Footer from './components/footerComponent/footer';
@@ -17,6 +17,7 @@ class App extends Component {
       <div className="App">
 
         <Header/>
+        <HashRouter basename="/">
         <Switch>
         <Route exact path="/Portfolio" component={Portfolio}/>
         <Route exact path="/ContactUs" component={ContactUsPage}/>
@@ -24,6 +25,7 @@ class App extends Component {
           <Route exact path="/Modals" component={BootStrapModal}/>
         <Route exact path="/" component={Homepage}/>
         </Switch>
+        </HashRouter>
         <Footer/>
 
       </div>

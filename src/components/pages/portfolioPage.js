@@ -30,7 +30,7 @@ class PortfolioPage extends Component
             return (
               <div className="col-lg-4 col-sm-6">
                     <div className="portfolio-item">
-                 {item.text ? <a className="portfolio-link" onClick={() => this.setState({bg:item.bg, showLog: true})}>
+                 {item.text ? <a className="portfolio-link" onClick={() => this.setState({bg:item.bg,bg2:item.bg2, showLog: true})}>
                  <div className="portfolio-hover">
                        <div className="portfolio-hover-content">
                        <div className="text-white-50">
@@ -81,35 +81,40 @@ class PortfolioPage extends Component
                           alt="First slide"
                           />
                           <Carousel.Caption>
-                          <h3>First slide label</h3>
-                          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                          <h3></h3>
+                          <p></p>
                           </Carousel.Caption>
                           </Carousel.Item>
+                          {this.state.bg2 &&
                           <Carousel.Item>
                           <img
                           className="d-block w-100"
-                          src={process.env.PUBLIC_URL + this.state.bg}
+                          src={process.env.PUBLIC_URL + this.state.bg2}
+                          alt="2nd slide"
+                          />
+
+                          <Carousel.Caption>
+
+                          <h3></h3>
+                          <p></p>
+                          </Carousel.Caption>
+                          </Carousel.Item>
+                        }
+                          {this.state.bg3 &&
+                          <Carousel.Item>
+                          <img
+                          className="d-block w-100"
+                          src={process.env.PUBLIC_URL + this.state.bg3}
                           alt="Third slide"
                           />
 
                           <Carousel.Caption>
-                          <h3>Second slide label</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                          <h3></h3>
+                          <p></p>
                           </Carousel.Caption>
                           </Carousel.Item>
-                          <Carousel.Item>
-                          <img
-                          className="d-block w-100"
-                          src={process.env.PUBLIC_URL + this.state.bg}
-                          alt="Third slide"
-                          />
-
-                          <Carousel.Caption>
-                          <h3>Third slide label</h3>
-                          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                          </Carousel.Caption>
-                          </Carousel.Item>
-                          </Carousel> 
+                        }
+                          </Carousel>
                         <h2>Project Summary</h2>
                         <p>
                           LOT SIZE
@@ -126,7 +131,7 @@ class PortfolioPage extends Component
                     <Modal.Footer>
 
 
-                        <Button onClick={() => this.setState({showLog: false})}>Cancel</Button>
+                        <Button onClick={() => this.setState({showLog: false})}>Close</Button>
                     </Modal.Footer>
                     </Modal>
 </section>

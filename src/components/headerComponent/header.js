@@ -28,9 +28,9 @@ class Header extends Component {
           <Col>
           <Navbar.Collapse id="basic-navbar-nav">
            <Nav className="mx-auto left">
-             <Nav.Link className="mr-sm-2" href="/LearnMore">Learn More</Nav.Link>
-             <Nav.Link className="mr-sm-2" href="/Portfolio">Portfolio</Nav.Link>
-             <Nav.Link className="mr-sm-2" href="/ContactUs">Contact Us</Nav.Link>
+             <Nav.Link className="mr-sm-2" href="/#/LearnMore">Learn More</Nav.Link>
+             <Nav.Link className="mr-sm-2" href="/#/Portfolio">Portfolio</Nav.Link>
+             <Nav.Link className="mr-sm-2" href="/#/ContactUs">Contact Us</Nav.Link>
              </Nav>
              </Navbar.Collapse>
              </Col>

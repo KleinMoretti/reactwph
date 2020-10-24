@@ -3,7 +3,7 @@ import { Link,useHistory } from 'react-router-dom';
 
 import {Map,TileLayer} from 'react-leaflet';
 //component
-import '/home/klein/Desktop/ReactWPH/reactwph/src/Assets/css/ContactUs.css'
+import '../../Assets/css/ContactUs.css'
 import 'leaflet/dist/leaflet.css';
 const DEFAULT_LANGITUDE=123;
 const DEFAULT_LATITUDE=48;
