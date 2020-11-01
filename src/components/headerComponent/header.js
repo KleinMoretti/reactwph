@@ -14,7 +14,7 @@ class Header extends Component {
          <Navbar className="navbar-custom sticky-nav" sticky="top"
       expand="lg" >
           <Col>
-         <Navbar.Brand className="navbar-custom-text" href="/">
+         <Navbar.Brand className="navbar-custom-text" href="/reactwph/#/">
            <img
              alt="Logo"
              src={logo}
@@ -28,8 +28,8 @@ class Header extends Component {
           <Col>
           <Navbar.Collapse id="basic-navbar-nav">
            <Nav className="mx-auto left">
-             <Nav.Link className="mr-sm-2" href="reactwph/LearnMore">Learn More</Nav.Link>
-             <Nav.Link className="mr-sm-2" href="/Portfolio">Portfolio</Nav.Link>
+             <Nav.Link className="mr-sm-2" href="reactwph/#/LearnMore">Learn More</Nav.Link>
+             <Nav.Link className="mr-sm-2" href="#/Portfolio">Portfolio</Nav.Link>
              <Nav.Link className="mr-sm-2" href="/ContactUs">Contact Us</Nav.Link>
              </Nav>
              </Navbar.Collapse>

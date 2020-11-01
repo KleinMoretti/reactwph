@@ -42,7 +42,7 @@ class PortfolioPage extends Component
 
                      </div>
                    </div>
-                   <img className="img-fluid" src={process.env.PUBLIC_URL + item.bg}  alt={item.title} />
+                   <img className="img-fluid" src={(process.env.PUBLIC_URL + item.bg)}  alt={item.title} />
 
                </a>: ''}
                </div>
